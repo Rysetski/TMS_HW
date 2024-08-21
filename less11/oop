@@ -1,0 +1,18 @@
+class Towar:
+    def __init__(self, name, shop_name, cost) -> None:
+        self.__name = name
+        self.__shop_name = shop_name
+        self.__cost = cost
+
+
+class Sklad:
+    def __init__(self):
+        self.__towary = [Towar("ima", "evroopt", 10), Towar(
+            "baton", "evroopt", 20), Towar("hleb", "evroopt", 30)]
+
+    def show(self, idx):
+        return self.__towary[idx]
+
+
+sklad = Sklad()
+print(sklad.show(0).__name)
