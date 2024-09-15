@@ -1,0 +1,40 @@
+-- SQLite
+-- CREATE TABLE Persons (
+--     PersonID int,
+--     LastName varchar(255),
+--     FirstName varchar(255),
+--     Address varchar(255),
+--     City varchar(255)
+-- );
+-- -- INSERT INTO Persons (PersonID, LastName, FirstName, Address, City) VALUES (1, "Kobyak", "Eugene", "Masherova 15", "Minsk");
+-- -- SELECT * FROM Persons;
+-- DROP TABLE Tables;
+-- -- CREATE TABLE Employee (
+-- --     ID int PRIMARY KEY
+-- --     Personid int NOT NULL AUTO_INCREMENT,
+-- --     LastName varchar(255),
+-- --     FirstName varchar(255),
+-- --     Address varchar(255),
+-- --     City varchar(255)
+-- -- );
+-- INSERT INTO Persons (PersonID, LastName, FirstName, Address, City) VALUES ("Kobyak", "Eugene", "Masherova 15", "Minsk");
+-- -- 
+-- -- SQLite
+-- CREATE TABLE Employee (
+--     ID integer PRIMARY KEY,
+--     LastName varchar(255),
+--     FirstName varchar(255),
+--     Address varchar(255),
+--     City varchar(255),
+--     Manager int,
+-- FOREIGN KEY(Manager) REFERENCES Employee(ID)
+);
+-- DROP TABLE Persons;
+-- INSERT INTO Employee (LastName, FirstName, Address, City) 
+-- VALUES ("Pupkin", "Vasya", "Masherova 15", "Minsk");
+-- -- INSERT INTO Employee, "Petya", "Masherova 16", "Minsk", 1);
+-- -- VALUES ("Sidorov"me, Manager FROM Employee WHERE LastName = "Sidorov";
+-- -- SELECT FirstNa (LastName, FirstName, Address, City, Manager) 
+-- -- DELETE FROM Employee
+-- UPDATE Employee SET LastName = "Petrov", FirstName = "Yura", Address = "Sovetskayua 5" City = minsk, 2;
+-- WHERE ID = 5;
