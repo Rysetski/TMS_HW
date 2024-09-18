@@ -1,0 +1,22 @@
+<!doctype html>
+<title>Hello from Flask</title>
+
+<form action="/trader/edit/{{ trader.id }}" method="post">
+    <p>
+        <label for="first_name">First name: </label> 
+        <input type="text" name="first_name" id="first_name" value="{{ trader.firstName }}">
+    </p>
+    <p>
+        <label for="last_name">Last name: </label> 
+        <input type="text" name="last_name" id="last_name" value="{{ trader.lastname }}">
+    </p>
+    <p>
+        <label for="email">Email: </label> 
+        <input type="text" name="email" id="email" value="{{ trader.email }}">
+    </p>
+    <p>
+        <label for="address">Address: </label> 
+        <input type="text" name="address" id="address" value="{{ trader.address }}">
+    </p>
+    <input type="submit">
+</form>

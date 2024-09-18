@@ -1,0 +1,24 @@
+<!doctype html>
+<title>Hello from Flask</title>
+
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    {% for trader in traders %}
+    <tr>
+      <td>{{ trader.firstName }}</td>
+      <td>{{ trader.lastname }}</td>
+      <td>{{ trader.email }}</td>
+      <td>{{ trader.address }}</td>
+      <td> <a href="/trader/edit/{{ trader.id }}">Edit</a> </td>
+      <td> <a href="/trader/delete/{{ trader.id }}">Delete</a> </td>
+    </tr>
+    {% endfor %}
+</table>
+
