@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="{% url 'create_category'%}" method="post">
+    {% csrf_token %}
+    {{ cat_form }}
+    <p>
+        <input type="submit">
+    </p>
+    
+</form>
+
+{% endblock %}
