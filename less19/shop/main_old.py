@@ -6,7 +6,7 @@ from models.traders import Trader
 from models.orders import Order
 from models.base import Base, engine
 
-from views import my_ord 
+from views import my_ord
 
 metadata = Base.metadata
 session_pool = sessionmaker(bind=engine)
@@ -16,21 +16,21 @@ session_pool = sessionmaker(bind=engine)
 # category3 = Category(name="instrument")
 
 # trader1 = Trader(
-#     firstName="Vasilij", 
+#     firstName="Vasilij",
 #     lastname="Pupkin",
 #     email="vasil.pup@gmail.com",
 #     address="Partizan.st 123"
 #     )
 
 # trader2 = Trader(
-#     firstName="Yuri", 
+#     firstName="Yuri",
 #     lastname="Sidorov",
 #     email="yuri.sid@gmail.com",
 #     address="Masherov.st 13"
 #     )
 
 # trader3 = Trader(
-#     firstName="Ivan", 
+#     firstName="Ivan",
 #     lastname="Ivanov",
 #     email="ivan.ivn@gmail.com",
 #     address="Kuncevskaya.st 6"
@@ -58,13 +58,13 @@ session_pool = sessionmaker(bind=engine)
 #     session.add_all([category1, category2, category3, trader1, trader2, trader3, good1, good2, good3]) # Add the new user to the session
 #     session.commit()
 
-with session_pool() as session:
-    my_ord.show_goods(session)
-    print("Make your order!")
-    new_order = my_ord.make_order(session)
-    session.add(new_order)
-    session.commit()
+# with session_pool() as session:
+#     my_ord.show_goods(session)
+#     print("Make your order!")
+#     new_order = my_ord.make_order(session)
+#     session.add(new_order)
+#     session.commit()
 
-# if __name__ == "__main__":
-#     # Create the table in the database
-#     metadata.create_all(engine)
+if __name__ == "__main__":
+    # Create the table in the database
+    metadata.create_all(engine)
