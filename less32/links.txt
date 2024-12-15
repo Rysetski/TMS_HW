@@ -1,0 +1,15 @@
+https://roadmap.sh/
+https://roadmap.sh/backend
+https://roadmap.sh/r/django-fdarg
+https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
+
+Занятие 32. Django REST API (5 часть)
+
+Рассмотренные темы:
+- Django Roadmap
+- Black style
+- Фильтрация
+- Serializers (валидаторы, обновление, вложенное создание)
+- Django debug toolbar
+- Оптимизация запросов к БД
+- Детальный разбор CBV (файл схемы ниже)

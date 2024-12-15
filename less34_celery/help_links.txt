@@ -1,0 +1,11 @@
+https://docs.celeryq.dev/en/stable/userguide/canvas.html
+полезные ссылки 
+https://docs.celeryq.dev/en/stable/userguide/periodic-tasks.html#using-custom-scheduler-classes  Планировщик задач через панель администратора Django (https://docs.celeryq.dev/en/stable/userguide/periodic-tasks.html#using-custom-scheduler-classes)
+
+https://docs.celeryq.dev/en/stable/userguide/monitoring.html#flower-real-time-celery-web-monitor Мониторинг через веб-интерфейс Flower (https://docs.celeryq.dev/en/stable/userguide/monitoring.html#flower-real-time-celery-web-monitor)
+
+https://docs.celeryq.dev/en/stable/userguide/calling.html#on-message   Обновление статуса выполнения задачи во время её выполнения (https://docs.celeryq.dev/en/stable/userguide/calling.html#on-message)
+
+https://docs.celeryq.dev/en/stable/userguide/calling.html#eta-and-countdown  Задержка переда выполнением задачи (https://docs.celeryq.dev/en/stable/userguide/calling.html#eta-and-countdown)
+
+https://docs.celeryq.dev/en/stable/userguide/calling.html#expiration  Указание срока истечения задачи (https://docs.celeryq.dev/en/stable/userguide/calling.html#expiration)

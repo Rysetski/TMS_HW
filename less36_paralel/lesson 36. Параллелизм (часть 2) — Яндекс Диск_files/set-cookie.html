@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://docviewer.yandex.by/set-cookie.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+<script type="text/javascript">
+    const currentTld = /\.yandex\.([\w\.]+)/.exec(location.host)[1];
+    const diskHostRegExp = new RegExp(
+        `^https://(?:disk|.+\\.(?:dsp|dst|dsd))\\.yandex\\.${currentTld.replace('.', '\\.')}$`
+    );
+    function listener(event) {
+        if (!diskHostRegExp.test(event.origin)) {
+            return;
+        }
+        const { type, name, value } = JSON.parse(event.data);
+        if (type === 'set-cookie' && name === 'passToken') {
+            const afterFourHours = new Date();
+            afterFourHours.setHours(afterFourHours.getHours() + 4);
+            document.cookie = `${name}=${value}; path=/; expires=${afterFourHours.toUTCString()}`;
+        }
+    }
+    window.addEventListener('message', listener);
+</script>
+
+
+</body></html>
