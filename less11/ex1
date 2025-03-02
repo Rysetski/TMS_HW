@@ -16,3 +16,5 @@ class Sklad:
 
 sklad = Sklad()
 print(sklad.show(0).__name)
+
+#test
